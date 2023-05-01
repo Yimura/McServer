@@ -2,7 +2,7 @@ FROM debian:buster-slim AS dl
 
 WORKDIR /tmp
 
-RUN apt update && apt install wget -y && wget https://piston-data.mojang.com/v1/objects/4a8487f877eb4f3506978fb85faf41a08b570398/server.jar -O server.jar
+RUN apt update && apt install wget -y && wget https://piston-data.mojang.com/v1/objects/96e1b9db0f3d90309db34e8ce4fd39b52f6ddaa0/server.jar -O server.jar
 
 FROM azul/zulu-openjdk:19-jre
 
