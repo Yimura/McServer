@@ -3,6 +3,7 @@ services:
   mc-server:
     container_name: mc-server
     build: .
+    restart: unless-stopped
     ports:
       - 25565:25565
     volumes:
