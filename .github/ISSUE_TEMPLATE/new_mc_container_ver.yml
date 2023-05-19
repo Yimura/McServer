@@ -1,0 +1,14 @@
+name: Build a new Minecraft Server container
+description: Trigger a new Github action to build a given Minecraft server version.
+title: "[Build]: "
+labels: []
+assignees: []
+body:
+  - type: input
+    id: minecraft-version
+    attributes:
+      label: Minecraft Version string
+      description: Put in the Minecraft version string of the server image you wish to build (1.20-pre4, 23w17a, b1.6, ...)
+      placeholder: 1.20-pre4
+    validations:
+      required: true
