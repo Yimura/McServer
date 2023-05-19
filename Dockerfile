@@ -10,6 +10,11 @@ RUN apt update &&\
 
 FROM azul/zulu-openjdk:19-jre
 
+LABEL org.opencontainers.image.version ${MC_VER}
+LABEL org.opencontainers.image.title Minecraft Server ${MC_VER}
+LABEL org.opencontainers.image.authors Yimura
+LABEL org.opencontainers.image.source https://github.com/Yimura/McServer
+
 ENV MEM_ALLOCATION=6G
 
 EXPOSE 25565
